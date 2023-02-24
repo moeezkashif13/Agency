@@ -4,7 +4,7 @@ export default function EventsAndOurTeam(){
     return(
 
 
-        <div className="bg-[#28293E] sm:pt-12 px-6 py-4 sm:commonPaddingTablet">
+        <div className="bg-[#28293E] sm:pt-12 px-6 py-4 sm:commonPaddingTablet xl:commonPaddingDesktop">
 
 
 <div >
@@ -13,13 +13,12 @@ export default function EventsAndOurTeam(){
 
 <p className="sm:text-lg text-primaryColor tracking-common">Events</p>
 
-<p className="text-commonHeading sm:text-[56px] sm:mt-5 sm:mb-16   font-extrabold text-white leading-[48px] sm:leading-[64px]">Explore Future Conferences</p>
+<p className="text-commonHeading sm:text-[56px] mt-5 mb-12   font-extrabold text-white leading-[48px] sm:leading-[64px]">Explore Future Conferences</p>
 
 </div>
 
 
-<div className="text-white  flex flex-col lg:flex-row lg:flex-wrap  sm:gap-y-9 sm:justify-between  ">
-
+<div className="text-white  flex flex-col lg:flex-row lg:flex-wrap  gap-y-8 sm:justify-between  ">
 
 {[1,2,3,4].map((elem)=>{
     return <div className="w-full lg:w-[350px] sm:w-full relative py-9 px-7 sm:px-10 rounded-md " style={{border:'1px solid #3A3C56'}}>

@@ -2,7 +2,7 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa"
 
 export const OurStats = ()=>{
 
-    return <div className="lg:flex mt-16 sm:[&>*]:border-r-[1px] sm:[&>*]:border-[#F3D1BF]   check rounded-md text-[#391400]  " >
+    return <div className="lg:flex mt-16  lg:[&>*]:border-r-[1px] [&>*]:border-b-[1px] [&>*]:border-[#F3D1BF]   check rounded-md text-[#391400]  last:lg:[&>*]:border-r-[0px] last:[&>*]:border-b-0" >
 
 
     <div className="px-12 sm:flex-grow h-[175px] flex flex-col justify-center"> 
@@ -60,7 +60,7 @@ export const BrandsWeWorkedWith = ()=>{
 
 
 export const FAQ = ({primary,desktopColumn}) =>{
-        return <div className={` xl:flex  ${desktopColumn&&'sm:flex-col w-2/3 mx-auto'}   sm:gap-x-32 `}>
+        return <div className={` xl:flex xl:flex-row    ${desktopColumn&&'sm:flex-col  '}   sm:gap-x-32 `}>
 
         <div className={`w-full ${primary?'text-secondaryColor':'text-white'} `} >
         

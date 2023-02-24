@@ -2,7 +2,7 @@ import { FaLaptopCode, FaPenAlt, FaPeopleArrows } from "react-icons/fa";
 
 export default function Service(){
     return(
-        <div className="text-[#391400] sm:commonPaddingTablet">
+        <div className="text-[#391400] sm:commonPaddingTablet xl:commonPaddingDesktop">
 
 
 <p className="uppercase text-primaryColor  leading-8 tracking-[3px]">Services</p>
@@ -10,7 +10,7 @@ export default function Service(){
 <h1 className="text-4xl leading-[48px] sm:mt-4 sm:mb-8 font-extrabold">How Our Agency Can Help</h1>
 
 
-<div className="lg:flex check  rounded-md text-[#391400]  sm:[&>*]:border-r-[1px] sm:[&>*]:border-[#F3D1BF]   ">
+<div className="lg:flex check  lg:[&>*]:border-r-[1px] [&>*]:border-b-[1px] [&>*]:border-[#F3D1BF]    last:lg:[&>*]:border-r-[0px] last:[&>*]:border-b-0  check rounded-md text-[#391400]  ">
 
  <div className="lg:w-1/3 px-7  py-12 ">
 

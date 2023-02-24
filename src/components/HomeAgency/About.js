@@ -4,7 +4,7 @@ import { HowWeWork, OurStats } from "../smallcomponents/commonComponents"
 export const About  = ()=>{
 
     return(
-        <div className="sm:commonPaddingTablet  ">
+        <div className="sm:commonPaddingTablet xl:commonPaddingDesktop  ">
 
 
 <div className="lg:flex lg:flex-row-reverse sm:gap-x-16 ">

@@ -7,7 +7,7 @@ export default function HomeAgencyHeroSect(){
  
 <div>
 
- <div className="commonPadding py-4 sm:pb-14 sm:commonPaddingTablet    bg-[#28293E]">
+ <div className="commonPadding py-4 sm:pb-14 sm:commonPaddingTablet xl:commonPaddingDesktop    bg-[#28293E]">
  
 
 
@@ -47,7 +47,7 @@ export default function HomeAgencyHeroSect(){
 
         </div>
 
-<div className="sm:flex  sm:pt-24 sm:flex-col-reverse xl:flex-row-reverse    sm:gap-x-16 sm:justify-between">
+<div className="sm:flex  sm:pt-24 pt-12 sm:flex-col-reverse xl:flex-row-reverse    sm:gap-x-16 sm:justify-between">
 
 
 <div className="w-full h-[335px] lg:mx-auto sm:h-[600px]  sm:w-[570px]  bg-contain bg-no-repeat 
@@ -70,13 +70,13 @@ sm:bg-[url('/Bitmap-Desktop.png')]
 
 <h2 className="uppercase  text-primaryColor text-base tracking-[3px]">Modern Studio</h2>
 
-<p className="text-[56px] sm:my-6 sm:text-7xl sm:leading-[80px] text-white font-extrabold leading-[64px] tracking-[-1px]">We’re Help To Build Your Dream Project</p>
+<p className="text-[56px] my-6 sm:text-7xl sm:leading-[80px] text-white font-extrabold leading-[64px] tracking-[-1px]">We’re Help To Build Your Dream Project</p>
 
 
 <p className="leading-8 sm:mb-9" style={{color: 'rgba(255, 255, 255, 0.64)'}}>Agency provides a full service range including technical skills, design, business understanding.</p>
 
 
-<div className="flex text-white items-center ">
+<div className="flex text-white items-center my-6">
 
 <ButtonText text="How we work"/>
 
@@ -88,10 +88,10 @@ sm:bg-[url('/Bitmap-Desktop.png')]
 
 
 
-<div className="flex  sm:mt-8">
+<div className="flex  ">
 
 
-<div className="w-12 h-12 bg-darkPrimaryBackground rounded-full"></div>
+<div className="w-12 h-12 min-w-[48px] min-h-[48px] bg-darkPrimaryBackground rounded-full"></div>
 
 <div className="ml-4">
 

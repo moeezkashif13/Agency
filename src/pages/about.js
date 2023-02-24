@@ -25,9 +25,9 @@ export default function AboutPage(){
 {/* SECOND SECTION */}
 
 
-<div className="commonPadding sm:commonPaddingDesktop ">
+{/* <div className="commonPadding sm:commonPaddingTablet xl:commonPaddingDesktop ">
 
-<div className=" sm:flex sm:mt-20 sm:mb-28 ">
+<div className=" sm:flex mt-20 mb-28 ">
 
 <div className="w-full " >
 
@@ -84,7 +84,7 @@ A digital agency is a business you hire to outsource your digital marketing effo
 
 
 
-</div>
+</div> */}
 
 
 
@@ -97,23 +97,21 @@ A digital agency is a business you hire to outsource your digital marketing effo
 {/* THIRD SECTION */}
 
 
-<div className="commonPadding sm:commonPaddingDesktop sm:flex sm:my-32 sm:gap-x-32">
+<div className="commonPadding sm:commonPaddingTablet xl:commonPaddingDesktop lg:flex my-24 gap-x-32">
 
 
-<div className="sm:w-[40%] ">
+<div className=" lg:w-[40%]">
     <p className="tracking-common text-primaryColor uppercase">Features</p>
     <p className="mt-8 mb-4 text-xl leading-8">Long run, and work as an extension of the merchant's team.</p>
     <p className="text-secondaryText">Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension.</p>
 </div>
 
 
-
-
-<div className="sm:w-[60%] check rounded-md sm:flex">
+<div className=" lg:w-[60%] check rounded-md  sm:flex sm:mt-4  sm:[&>*]:border-r-[1px] [&>*]:border-b-[1px] [&>*]:border-[#F3D1BF]    last:sm:[&>*]:border-r-[0px] last:[&>*]:border-b-0">
 
 
 {[1,2].map((elem,index)=>{
-    return <div className=" transition hover:bg-white hover:scale-105 px-12 py-12">
+    return <div className="w-full transition hover:bg-white hover:scale-105 px-12 py-12 lg:px-6 lg:py-6   ">
 
 
     <div className="w-20 h-20 rounded-full bg-purple-500"></div>
@@ -143,7 +141,7 @@ A digital agency is a business you hire to outsource your digital marketing effo
 
 
 {/* FOURTH SECTION */}
-<div className="commonPadding sm:commonPaddingDesktop my-20 ">
+<div className="commonPadding sm:commonPaddingTablet xl:commonPaddingDesktop my-20 ">
 <OurStats/>
 </div>
 {/* FOURTH SECTION */}
@@ -151,7 +149,7 @@ A digital agency is a business you hire to outsource your digital marketing effo
 
 {/* FIFTH SECTION */}
 
-<div className="commonPadding sm:commonPaddingDesktop bg-blackAlike py-16 flex flex-col gap-y-24">
+<div className="commonPadding sm:commonPaddingTablet xl:commonPaddingDesktop bg-blackAlike py-16 flex flex-col gap-y-24">
 
 <FAQ  desktopColumn />
 

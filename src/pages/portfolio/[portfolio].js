@@ -6,9 +6,9 @@ import { FaChevronLeft, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/
 export default function SinglePortfolio(){
 
 return (
-    <div className="commonPadding sm:commonPaddingDesktop bg-mainBackground">
+    <div className="commonPadding sm:commonPaddingTablet bg-mainBackground">
 
-<div className="sm:py-8 sm:w-1/2 sm:mx-auto">
+<div className="sm:py-8 lg:w-1/2 lg:mx-auto">
 
 <Link href="/portfolio">
 <div className="flex items-center gap-x-3 text-secondaryColor font-bold text-sm">
@@ -82,13 +82,13 @@ return (
 
 </div>
 
-<div className="h-[202px] w-full rounded-md bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]"></div>
+<div className="h-[202px] md:h-[720px] w-full rounded-md bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]"></div>
 
 
 
 <div className="text-secondaryColor py-[75px] ">
 
-<div className="sm:w-1/2 sm:mx-auto">
+<div >
 <p className="text-commonHeading leading-10 font-extrabold">Problem</p>
 
 <div className="text-secondaryText mt-8 mb-16">
@@ -97,10 +97,10 @@ return (
 </div>
 </div>
 
-<div className=" sm:flex sm:flex-row  sm:gap-x-8 ">
+<div className=" sm:gap-x-8 lg:flex">
 
 <div >
-<div className="w-[329px] h-[259px] sm:w-[570px] sm:h-[448px] rounded-md flex justify-center items-center mb-4 bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]">
+<div className="w-[329px] lg:mx-auto h-[259px] sm:w-[570px] sm:h-[448px] rounded-md flex justify-center items-center mb-4 bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]">
 
 <div className="w-36 h-36 rounded-full border border-[rgba(255, 255, 255, 0.503821)] flex items-center justify-center">
     <p>ppp</p>
@@ -109,7 +109,7 @@ return (
 </div>
 </div>
 
-<div className=" flex flex-wrap    gap-6 ">
+<div className=" flex flex-wrap    gap-6  bg-green-700 ">
 
 {[1,2,3,4].map(()=>{
     return <div className="w-[156px] h-[120px] sm:w-[270px] sm:h-[208px] rounded-md bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]">    </div>
@@ -127,7 +127,7 @@ return (
 
 
 
-<div className="text-secondaryColor sm:mt-8 sm:w-1/2 sm:mx-auto">
+<div className="text-secondaryColor sm:mt-8 ">
 
 
 <p className="text-commonHeading leading-10 font-extrabold">Solution</p>

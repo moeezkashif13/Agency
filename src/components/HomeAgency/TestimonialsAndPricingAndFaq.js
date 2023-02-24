@@ -7,15 +7,15 @@ import { FaStar } from "react-icons/fa";
 export default function TestimonialsAndPricing(){
     return(
 
-        <div className="bg-[#FDF0E9] px-6 sm:commonPaddingTablet ">
+        <div className="bg-[#FDF0E9] px-6 sm:commonPaddingTablet xl:commonPaddingDesktop ">
 
-        <div >
+        <div className="py-12">
             
 
 <div className="sm:text-center ">
 <p className="sm:mt-14 mb-5 text-primaryColor uppercase">Testimonials</p>
 
-<p className="sm:text-[56px] font-extrabold  sm:leading-[64px] sm:mb-16 sm:mx-auto">What Our Clients Saying</p>
+<p className="text-4xl font-extrabold  sm:leading-[64px] mb-10 sm:mx-auto">What Our Clients Saying</p>
 
 </div>
 
@@ -80,7 +80,7 @@ export default function TestimonialsAndPricing(){
 
 <p className="text-primaryColor">Pricing</p>
 
-<h1 className="sm:mt-5 sm:mb-16 sm:text-[36px] font-extrabold  sm:leading-[64px]">Check Our Pricing Plans</h1>
+<h1 className="sm:mt-5 mb-8 sm:text-[36px] font-extrabold  sm:leading-[64px]">Check Our Pricing Plans</h1>
 
 
 <div className=" sm:flex sm:flex-wrap sm:justify-center">

@@ -20,7 +20,7 @@ return(
 <div className="bg-mainBackground">
 
 
-<div className="commonPadding sm:commonPaddingDesktop">
+<div className="commonPadding sm:commonPaddingTablet xl:commonPaddingDesktop">
 
 <div className="flex justify-center py-10 sm:hidden">
 <FieldDefault fullWidth   dropdownEnabled  />  
@@ -67,7 +67,7 @@ return(
 
 
 
-<div className="flex flex-col  sm:flex-wrap sm:flex-row sm:gap-8 gap-y-20">
+<div className="flex flex-col items-center sm:flex-row sm:flex-wrap sm:justify-between   gap-y-8 ">
 
 
 {[1,2,3,4,5,6,7,8].map((elem,index)=>{
@@ -123,7 +123,7 @@ return(
 
 
 
-<div className="bg-mainBackground commonPadding sm:commonPaddingDesktop">
+<div className="bg-mainBackground commonPadding sm:commonPaddingTablet xl:commonPaddingDesktop">
 
 
 <DreamProject/>

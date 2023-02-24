@@ -21,7 +21,7 @@ const GetInTouch = ()=>{
     
     <div >
         
-        <div className=" sm:w-[400px] relative flex flex-col gap-y-5">
+        <div className="  relative flex flex-col gap-y-5">
     <FieldDefault fullWidth placeholder="Your Email"  />
     <FieldDefault fullWidth dropdownEnabled placeholder="Subject"  />
     <FieldDefault fullWidth messageField  placeholder="Message"  />
@@ -53,7 +53,7 @@ export default function Contact(){
 </div>
 
 
-<div >
+<div className="hidden lg:block">
 
 <div className="rounded-md  h-[700px] flex items-center pl-32 bg-cover bg-center bg-no-repeat" style={{backgroundImage:`url(/Map-Desktop.png)`}}>
     
@@ -72,9 +72,10 @@ export default function Contact(){
 </div>
 
 
-<div className="commonPadding sm:px-0 ">
+<div className="commonPadding xl:commonPaddingDesktop mt-16  ">
 
-<div className="bg-purple-500 sm:hidden">
+
+<div  className=" lg:hidden">
 
 
 {/*  */}
@@ -83,7 +84,7 @@ export default function Contact(){
 {/*  */}
 
 
-<div className="rounded-md flex items-center justify-center h-[700px] bg-cover bg-center bg-no-repeat" style={{backgroundImage:`url(/Map.png)`}}>
+<div className="rounded-md mt-10 flex items-center justify-center h-[700px] bg-cover bg-center bg-no-repeat" style={{backgroundImage:`url(/Map.png)`}}>
     
 
 </div>
@@ -97,8 +98,8 @@ export default function Contact(){
 
 
 {/*  */}
-<div className="sm:commonPaddingDesktop">
-<div className="check rounded-md my-8 sm:flex ">
+<div >
+<div className="check rounded-md my-8 lg:flex ">
 
 {infoArray.map((elem,index)=>{
     return <div className="sm:flex-grow pl-7 pr-4 py-8 border-b border-[#F3D1BF] last:border-none sm:border-r sm:last:border-none ">
@@ -130,7 +131,7 @@ export default function Contact(){
 
 
 {/*  */}
-<div className="sm:commonPaddingDesktop">
+<div >
 <FAQ  primary />
 </div>
 {/*  */}

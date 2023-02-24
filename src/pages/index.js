@@ -27,7 +27,7 @@ export default function Home() {
 
 
 
-<div className="mt-28 bg-[#FDF0E9]  sm:commonPaddingTablet">
+<div className="mt-28 bg-[#FDF0E9] commonPadding  sm:commonPaddingTablet xl:commonPaddingDesktop ">
 
 <DreamProject />
 

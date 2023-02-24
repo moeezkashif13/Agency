@@ -3,7 +3,7 @@ import {FaFacebookF,FaTwitter,FaInstagram} from 'react-icons/fa'
 export default function Footer(){
     return(
 
-        <div className="bg-[#FDF0E9] flex flex-col items-center lg:items-start pb-10 text-secondaryColor sm:commonPaddingTablet ">
+        <div className="bg-[#FDF0E9] flex flex-col items-center lg:items-start pb-10 text-secondaryColor sm:commonPaddingTablet xl:commonPaddingDesktop ">
 
 <div className='sm:mt-24 lg:flex lg:w-full'>
 
@@ -12,10 +12,10 @@ export default function Footer(){
 </div>
 
 
-<div className='text-center flex flex-col lg:flex-row lg:gap-x-40 xl:gap-x-56 lg:mt-0 gap-y-12  my-6  '>
+<div className='text-center flex flex-col lg:flex-row 2xl:mx-auto lg:gap-x-40 xl:gap-x-56 lg:mt-0 gap-y-12  my-6  '>
 
 
-<div className='lg:ml-52'>
+<div className='lg:ml-52 '>
     <p className="uppercase text-primaryColor tracking-common">Menu</p>
     <div className='flex flex-col mt-4 gap-y-1.5'>
         <a href='#!'>About</a>
