@@ -13,7 +13,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-        
+
+      screens:{
+
+        'xs': {'max': '383px'},
+
+
+      },
+      
       fontSize:{
         'commonHeading' : '40px',
         'commonHeadingDesktop' : '56px',

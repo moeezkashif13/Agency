@@ -2,8 +2,12 @@
 import Footer from "@/components/Footer";
 import { ButtonText } from "@/components/smallcomponents/CommonButtons";
 import { DifferentPagesHeroSect, FAQ } from "@/components/smallcomponents/commonComponents";
+import DivOpenMobileNavbar from "@/components/smallcomponents/DivOpenMobileNavbar";
 import FieldDefault from "@/components/smallcomponents/FieldDefault";
+import MobileNavbar, { openNavbarMobile } from "@/components/smallcomponents/MobileNavbar";
+import Navbar from "@/components/smallcomponents/Navbar";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaRegCompass } from "react-icons/fa";
+
 
 const infoArray = [
 
@@ -39,6 +43,8 @@ const GetInTouch = ()=>{
 }
 
 
+
+
 export default function Contact(){
 
 
@@ -47,6 +53,18 @@ export default function Contact(){
         <div className="bg-mainBackground">
 
 <div >
+
+
+{/* CHECKKKKK */}
+
+
+<Navbar/>
+
+
+{/* CHECKKKKK */}
+
+
+
 
 <DifferentPagesHeroSect heading="Contact" para="Agency provides a full service range including technical skills, design, business understanding." />
 

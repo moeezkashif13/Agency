@@ -1,5 +1,6 @@
 import { ButtonText } from "../smallcomponents/CommonButtons";
 import { BrandsWeWorkedWith } from "../smallcomponents/commonComponents";
+import Navbar from "../smallcomponents/Navbar";
 
 export default function HomeAgencyHeroSect(){
 
@@ -7,47 +8,13 @@ export default function HomeAgencyHeroSect(){
  
 <div>
 
+<Navbar/>
+
+
  <div className="commonPadding py-4 sm:pb-14 sm:commonPaddingTablet xl:commonPaddingDesktop    bg-[#28293E]">
  
 
-
- <div className="flex ">
-
-
-<div className="flex items-center gap-x-3 ">
-
-<img src="/logo.svg"  />
-
-<h1  className="text-2xl font-bold text-white">Agency</h1>
-
-
-</div>
-
-
-
-<div className="ml-auto">
-
-<div className="gap-y-1 w-12 h-12 rounded-md flex flex-col justify-center items-center" style={{border:'1px solid rgba(255, 255, 255, 0.295743)'}}>
-
-
-<div className="bg-[#D8D8D8] w-4 h-[2px] rounded-sm"></div>
-<div className="bg-[#D8D8D8] w-4 h-[2px] rounded-sm"></div>
-<div className="bg-[#D8D8D8] w-4 h-[2px] rounded-sm"></div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-        </div>
-
-<div className="sm:flex  sm:pt-24 pt-12 sm:flex-col-reverse xl:flex-row-reverse    sm:gap-x-16 sm:justify-between">
+<div className="sm:flex sm:pt-24 pt-12 sm:flex-col-reverse xl:flex-row-reverse    sm:gap-x-16 sm:justify-between">
 
 
 <div className="w-full h-[335px] lg:mx-auto sm:h-[600px]  sm:w-[570px]  bg-contain bg-no-repeat 
@@ -70,7 +37,7 @@ sm:bg-[url('/Bitmap-Desktop.png')]
 
 <h2 className="uppercase  text-primaryColor text-base tracking-[3px]">Modern Studio</h2>
 
-<p className="text-[56px] my-6 sm:text-7xl sm:leading-[80px] text-white font-extrabold leading-[64px] tracking-[-1px]">We’re Help To Build Your Dream Project</p>
+<p className="text-[56px]  my-6 sm:text-6xl sm:leading-[80px] text-white font-extrabold leading-[64px] tracking-[-1px]">We’re Help To Build Your Dream Project</p>
 
 
 <p className="leading-8 sm:mb-9" style={{color: 'rgba(255, 255, 255, 0.64)'}}>Agency provides a full service range including technical skills, design, business understanding.</p>

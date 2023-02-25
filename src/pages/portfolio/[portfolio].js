@@ -1,17 +1,30 @@
 import Footer from "@/components/Footer"
 import DreamProject from "@/components/HomeAgency/DreamProject"
+import HomeAgencyHeroSect from "@/components/HomeAgency/HeroSect"
+import { DifferentPagesHeroSect } from "@/components/smallcomponents/commonComponents"
+import Navbar from "@/components/smallcomponents/Navbar"
 import Link from "next/link"
-import { FaChevronLeft, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa"
+import { FaChevronLeft, FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa"
 
 export default function SinglePortfolio(){
 
 return (
-    <div className="commonPadding sm:commonPaddingTablet bg-mainBackground">
+
+<>
+
+<Navbar/>
+
+<DifferentPagesHeroSect  heading="Single Portfolio" para="Agency provides a full service range including technical skills, design, business understanding." />
+
+<div className="commonPadding sm:commonPaddingTablet xl:commonPaddingDesktop bg-mainBackground">
+
+
+
 
 <div className="sm:py-8 lg:w-1/2 lg:mx-auto">
 
 <Link href="/portfolio">
-<div className="flex items-center gap-x-3 text-secondaryColor font-bold text-sm">
+<div className="flex items-center gap-x-3  pt-6 text-secondaryColor font-bold text-sm">
     <p><FaChevronLeft/></p>
     <p className="uppercase pt-0.5">Back to portfolio</p>
 </div>
@@ -97,22 +110,22 @@ return (
 </div>
 </div>
 
-<div className=" sm:gap-x-8 lg:flex">
+<div className=" sm:gap-x-8 lg:flex ">
 
 <div >
-<div className="w-[329px] lg:mx-auto h-[259px] sm:w-[570px] sm:h-[448px] rounded-md flex justify-center items-center mb-4 bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]">
+<div className="xs:w-[w-full] w-[329px] lg:mx-auto h-[259px] sm:w-[490px] sm:h-[448px] rounded-md flex justify-center items-center mb-4 bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]">
 
 <div className="w-36 h-36 rounded-full border border-[rgba(255, 255, 255, 0.503821)] flex items-center justify-center">
-    <p>ppp</p>
+    {/* <p>ppp</p> */}
 </div>
 
 </div>
 </div>
 
-<div className=" flex flex-wrap    gap-6  bg-green-700 ">
+<div className=" flex flex-wrap xs:justify-between xs:w-full   gap-6  ">
 
 {[1,2,3,4].map(()=>{
-    return <div className="w-[156px] h-[120px] sm:w-[270px] sm:h-[208px] rounded-md bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]">    </div>
+    return <div className="xs:w-[46.15%] w-[156px] h-[120px] sm:w-[270px] sm:h-[208px] rounded-md bg-cover bg-center bg-no-repeat bg-[url('/Background.png')]">    </div>
 })}
 
 
@@ -152,15 +165,15 @@ return (
 
 <div className="flex gap-x-2 pt-6 pb-12 text-white">
     
-    <a href='#!' className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
+    <a href='https://www.facebook.com/abdulmoeez121367' target="_blank" className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
         <FaFacebookF/>
 </a>
 
-<a href='#!' className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
-        <FaTwitter/>
+<a href='https://wa.me/923364507406' target="_blank" className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
+        <FaWhatsapp/>
 </a>
 
-<a href='#!' className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
+<a href='#!' target="_blank" className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
         <FaInstagram/>
 </a>
 
@@ -181,18 +194,17 @@ return (
 
 </div>
 
+    </div>
 
-<div>
+    <div>
 
 <Footer/>
 
 </div>
 
 
+    </>
 
-
-
-    </div>
 )
 
 }

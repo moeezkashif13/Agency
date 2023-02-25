@@ -1,4 +1,4 @@
-import {FaFacebookF,FaTwitter,FaInstagram} from 'react-icons/fa'
+import {FaFacebookF,FaTwitter,FaInstagram, FaWhatsapp} from 'react-icons/fa'
 
 export default function Footer(){
     return(
@@ -42,12 +42,15 @@ export default function Footer(){
 
 <div className="flex text-white gap-x-2 mt-12 mb-16 sm:my-0 lg:ml-auto">
 
-<a href='#!' className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
+<a href='https://www.facebook.com/abdulmoeez121367' target="_blank" className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
         <FaFacebookF/>
 </a>
 
-<a href='#!' className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
-        <FaTwitter/>
+
+
+<a href='https://wa.me/923364507406' target="_blank" className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">
+        <FaWhatsapp/>
+        
 </a>
 
 <a href='#!' className="w-12 h-12 flex items-center justify-center text-lg rounded-full bg-primaryBackground">

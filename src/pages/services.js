@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import DreamProject from "@/components/HomeAgency/DreamProject";
 import { DifferentPagesHeroSect, HowWeWork } from "@/components/smallcomponents/commonComponents";
+import Navbar from "@/components/smallcomponents/Navbar";
 import { useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
@@ -14,9 +15,10 @@ export default function Services(){
 return(
     <div>
 
+<Navbar/>
 
 {/* FIRST SECTION */}
-<div className="pt-4 pb-20 bg-blackAlike">
+<div className="pt-4  bg-blackAlike">
 <DifferentPagesHeroSect heading="Services" para="Agency provides a full service range including technical skills, design, business understanding."  />
 </div>
 {/* FIRST SECTION */}

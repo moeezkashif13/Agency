@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer"
 import { BrandsWeWorkedWith, DifferentPagesHeroSect, FAQ, OurStats } from "@/components/smallcomponents/commonComponents"
+import Navbar from "@/components/smallcomponents/Navbar"
 
 export default function AboutPage(){
 
@@ -9,6 +10,7 @@ export default function AboutPage(){
 
         <div className="bg-mainBackground">
 
+<Navbar/>
 
 
 {/* FIRST SECTION */}

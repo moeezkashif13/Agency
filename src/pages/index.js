@@ -5,11 +5,13 @@ import EventsAndOurTeam from "@/components/HomeAgency/EventsAndOurTeam";
 import HomeAgencyHeroSect from "@/components/HomeAgency/HeroSect";
 import Service from "@/components/HomeAgency/Service";
 import TestimonialsAndPricingAndFaq from "@/components/HomeAgency/TestimonialsAndPricingAndFaq";
+import Navbar from "@/components/smallcomponents/Navbar";
 
 export default function Home() {
   return (
 
     <div className="bg-mainBackground">
+
 
 <HomeAgencyHeroSect/>
 

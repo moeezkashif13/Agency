@@ -3,14 +3,18 @@ import DreamProject from "@/components/HomeAgency/DreamProject";
 import { ButtonText } from "@/components/smallcomponents/CommonButtons";
 import { DifferentPagesHeroSect } from "@/components/smallcomponents/commonComponents";
 import FieldDefault from "@/components/smallcomponents/FieldDefault";
+import Navbar from "@/components/smallcomponents/Navbar";
+import Link from "next/link";
 
 export default function Portfolio(){
 
 return(
     <div>
 
+<Navbar/>
 
-<div className="sm:py-20 bg-blackAlike">
+
+<div className=" bg-blackAlike">
 
 <DifferentPagesHeroSect  heading="Portfolio"  para="Agency provides a full service range including technical skills, design, business understanding." /> 
 
@@ -71,7 +75,9 @@ return(
 
 
 {[1,2,3,4,5,6,7,8].map((elem,index)=>{
-    return <div className=" relative w-[329px] rounded-md sm:w-[370px]  h-[416px] bg-[#9B9B9B] ">
+    return <Link href="/portfolio/singleportfolio"> 
+    
+    <div className=" relative w-[329px] rounded-md sm:w-[370px]  h-[416px] bg-[#9B9B9B] ">
 
 <div className=" w-full h-full rounded-md   relative bg-cover bg-center bg-no-repeat bg-[url('/background.png')]" >
 
@@ -100,6 +106,9 @@ return(
 
 
     </div>
+
+    </Link>
+
 })}
 
 
