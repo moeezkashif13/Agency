@@ -11,10 +11,10 @@ export default function HomeAgencyHeroSect(){
 <Navbar/>
 
 
- <div className="commonPadding py-4 sm:pb-14 sm:commonPaddingTablet xl:commonPaddingDesktop    bg-[#28293E]">
+ <div className="commonPadding py-4 sm:pb-14 sm:commonPaddingTablet xl:commonPaddingDesktop  bg-[#28293E] ">
  
 
-<div className="sm:flex sm:pt-24 pt-12 sm:flex-col-reverse xl:flex-row-reverse    sm:gap-x-16 sm:justify-between">
+<div className="sm:flex   sm:pt-24 pt-12 sm:flex-col-reverse xl:flex-row-reverse    sm:gap-x-16 sm:justify-between">
 
 
 <div className="w-full h-[335px] lg:mx-auto sm:h-[600px]  sm:w-[570px]  bg-contain bg-no-repeat 

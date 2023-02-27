@@ -58,6 +58,23 @@ export const BrandsWeWorkedWith = ()=>{
 }
 
 
+const openSingleFaq = (event,index)=>{
+
+
+    document.querySelectorAll(".eachFaq").forEach(elem=>{
+
+        elem.querySelector(".singleFaqParagraph").classList.remove("checkShown")
+        elem.querySelector(".singleFaqParagraph").classList.add("checkHidden")
+
+    })
+
+
+    
+    document.querySelectorAll(".eachFaq")[index].lastChild.classList.remove("checkHidden")
+    document.querySelectorAll(".eachFaq")[index].lastChild.classList.add("checkShown")
+
+}
+
 
 export const FAQ = ({primary,desktopColumn}) =>{
         return <div className={` xl:flex xl:flex-row    ${desktopColumn&&'sm:flex-col  '}   sm:gap-x-32 `}>
@@ -81,30 +98,19 @@ export const FAQ = ({primary,desktopColumn}) =>{
         
         <div className="check rounded-md w-full ">
         
-        <div className="  px-7 py-10 bg-white rounded-t-md">
-            <div className="flex gap-x-4">
-                <p className={`text-secondaryColor leading-8 font-bold text-2xl`}>A digital agency is a business</p>
-                <div style={{minWidth:'32px',height:'32px'}} className="sm:ml-auto flex items-center justify-center text-white text-xl rounded-full bg-primaryBackground">
-                    
-                    <FaAngleUp/>
 
-                </div>
-            </div>
-        
-        
-        <p className={`text-secondaryText leading-8 mt-5`}>Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.</p>
-        
-        </div>
-        
-        
-        {[1,2,3].map(()=>{
-            return <div className="py-10 px-7">
+        {[1,2,3,4].map((elem,index)=>{
+            return <div className="eachFaq cursor-pointer  py-10 px-7" onClick={(event)=>openSingleFaq(event,index)} >
                 <div className="flex gap-x-4">
                     <p className={`${primary?'text-secondaryText':'text-white'} leading-8 font-bold text-2xl`}>Hire to outsource your digital</p>
                     <div style={{minWidth:'32px',height:'32px'}} className="sm:ml-auto flex items-center  justify-center text-white text-xl  bg-primaryBackground rounded-full">
                         <FaAngleDown/>
                     </div>
                 </div>
+                
+                <p className={`singleFaqParagraph checkHidden  text-secondaryText leading-8  `}>Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.</p>
+
+
             </div>
         })}
         

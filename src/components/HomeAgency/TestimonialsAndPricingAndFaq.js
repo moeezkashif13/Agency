@@ -83,7 +83,7 @@ export default function TestimonialsAndPricing(){
 <h1 className="sm:mt-5 mb-8 sm:text-[36px] font-extrabold  sm:leading-[64px]">Check Our Pricing Plans</h1>
 
 
-<div className=" sm:flex sm:flex-wrap sm:justify-center">
+<div className=" sm:flex sm:flex-wrap gap-7 sm:justify-center">
 
 {[1,2,3].map(()=>{
     return (

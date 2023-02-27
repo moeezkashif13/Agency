@@ -20,7 +20,13 @@ sm:bg-[url('/DreamProject-Desktop.png')]
 <div className="w-full  ">
     <h1 className="mt-8 text-commonHeading sm:text-commonHeadingDesktop leading-[48px] sm:leading-commonLineHeightDesktop text-white font-extrabold">We’re Help To Build Your Dream Project</h1>
     <p style={{color:'rgba(255, 255, 255, 0.64)'}} className='leading-8 my-4 sm:mt-6 sm:mb-8'>A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
+
+
+    <a href="https://www.facebook.com/abdulmoeez121367" target="_blank" >
     <ButtonText secondaryText text="Contact Us" />
+    </a>
+
+
 </div>
 
 

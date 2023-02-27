@@ -5,12 +5,13 @@ import EventsAndOurTeam from "@/components/HomeAgency/EventsAndOurTeam";
 import HomeAgencyHeroSect from "@/components/HomeAgency/HeroSect";
 import Service from "@/components/HomeAgency/Service";
 import TestimonialsAndPricingAndFaq from "@/components/HomeAgency/TestimonialsAndPricingAndFaq";
+import { FAQ } from "@/components/smallcomponents/commonComponents";
 import Navbar from "@/components/smallcomponents/Navbar";
 
 export default function Home() {
   return (
 
-    <div className="bg-mainBackground">
+    <div className="bg-mainBackground ">
 
 
 <HomeAgencyHeroSect/>
@@ -25,6 +26,7 @@ export default function Home() {
 
 <EventsAndOurTeam/>
 
+
 <TestimonialsAndPricingAndFaq />
 
 
@@ -38,9 +40,6 @@ export default function Home() {
 
 
 <Footer/>
-
-
-
 
     </div>
 
