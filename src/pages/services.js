@@ -3,9 +3,38 @@ import DreamProject from "@/components/HomeAgency/DreamProject";
 import { DifferentPagesHeroSect, HowWeWork } from "@/components/smallcomponents/commonComponents";
 import Navbar from "@/components/smallcomponents/Navbar";
 import { useEffect } from "react";
+import { AiFillCode, AiOutlineCode } from "react-icons/ai";
+import {FaAvianex, FaCloudversify, FaCode, FaFirefox} from 'react-icons/fa'
 import { FaChevronDown } from "react-icons/fa";
 
 
+const openSingleService = (event,index)=>{
+
+
+    document.querySelectorAll(".eachService").forEach(elem=>{
+
+        elem.querySelector(".servicesPageSingleServiceParagraph").classList.remove("checkShown")
+        elem.querySelector(".servicesPageSingleServiceParagraph").classList.remove("pt-16")
+        elem.querySelector(".servicesPageSingleServiceParagraph").classList.add("checkHidden")
+
+        elem.querySelector(".faqArrow").classList.remove("rotate-180")
+        elem.querySelector(".faqArrow").classList.add("rotate-0")
+
+    })
+
+
+    
+    document.querySelectorAll(".eachService")[index].lastChild.classList.remove("checkHidden")
+    document.querySelectorAll(".eachService")[index].lastChild.classList.add("checkShown")
+    document.querySelectorAll(".eachService")[index].lastChild.classList.add("pt-16")
+
+    
+    document.querySelectorAll(".eachService")[index].querySelector(".faqArrow").classList.remove("rotate-0")
+    document.querySelectorAll(".eachService")[index].querySelector(".faqArrow").classList.add("rotate-180")
+
+
+
+}
 
 
 export default function Services(){
@@ -58,7 +87,7 @@ return(
 <div >
 
 {[1,2,3].map((elem,index)=>{
-    return <div className="first:border-t-2 border-[#F3D1BF]">
+    return <div className="first:border-t-2 cursor-pointer border-[#F3D1BF] eachService" onClick={(event)=>openSingleService(event,index)} >
 
 
             <div  className="  flex items-center py-12 border-b-2 border-[#F3D1BF] ">
@@ -67,7 +96,7 @@ return(
 
 <p className="ml-8 mr-11 font-extrabold text-commonHeading leading-10">Design</p>
 
-<div className="w-8 h-8 min-w-[32px] sm:ml-auto rounded-full bg-primaryColor flex items-center justify-center text-white">
+<div className="w-8 h-8 min-w-[32px] faqArrow sm:ml-auto rounded-full bg-primaryColor flex items-center justify-center text-white" style={{transition:'all 0.6s'}}>
 
 <FaChevronDown/>
 
@@ -75,11 +104,8 @@ return(
 
 
 </div>
-
-
-{index==0&&
-
-<div className="   pt-16 pb-20 lg:w-1/2 lg:ml-auto " >
+    {/* pt-16 pb-20 */}
+<div className=" servicesPageSingleServiceParagraph checkHidden    lg:w-1/2 lg:ml-auto " >
 
 
 <p className="font-bold  text-secondaryColor text-2xl sm:text-commonHeading sm:leading-mediumLineHeight sm:font-extrabold">Agency is a business you hire to outsource your digital marketing efforts</p>
@@ -92,7 +118,9 @@ return(
 
 <div className=" flex  gap-x-4 items-center font-medium">
 
-<div className="w-8 h-8 rounded-full bg-primaryColor"></div>
+<div className="w-8 h-8 rounded-full bg-primaryColor flex items-center justify-center text-white">
+        <FaCode/>
+</div>
 
 <p className="pt-1">Web Development</p>
 
@@ -100,7 +128,9 @@ return(
 
 <div className="flex  gap-x-4 items-center font-medium">
 
-<div className="w-8 h-8 rounded-full bg-primaryColor"></div>
+<div className="w-8 h-8 rounded-full bg-primaryColor flex items-center justify-center text-white">
+        <FaAvianex/>
+</div>
 
 <p className="pt-1">Brand Strategy</p>
 
@@ -108,7 +138,9 @@ return(
 
 <div className="flex  gap-x-4 items-center font-medium">
 
-<div className="w-8 h-8 rounded-full bg-primaryColor"></div>
+<div className="w-8 h-8 rounded-full bg-primaryColor flex items-center justify-center text-white">
+        <FaFirefox/>
+</div>
 
 <p className="pt-1">Art Direction</p>
 
@@ -121,10 +153,6 @@ return(
 
 </div>
 
-
-
-
-} 
 
 
     </div>

@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer"
 import { BrandsWeWorkedWith, DifferentPagesHeroSect, FAQ, OurStats } from "@/components/smallcomponents/commonComponents"
 import Navbar from "@/components/smallcomponents/Navbar"
+import { FaPencilRuler } from "react-icons/fa"
 
 export default function AboutPage(){
 
@@ -116,7 +117,11 @@ A digital agency is a business you hire to outsource your digital marketing effo
     return <div className="w-full transition hover:bg-white hover:scale-105 px-12 py-12 lg:px-6 lg:py-6   ">
 
 
-    <div className="w-20 h-20 rounded-full bg-purple-500"></div>
+    <div className="text-white text-3xl w-20 h-20 rounded-full bg-primaryBackground flex items-center justify-center">
+
+    <FaPencilRuler/>
+
+    </div>
 
 <p className="font-bold mt-10 mb-5">Professional</p>
 
@@ -153,8 +158,9 @@ A digital agency is a business you hire to outsource your digital marketing effo
 
 <div className="commonPadding sm:commonPaddingTablet xl:commonPaddingDesktop bg-blackAlike py-16 flex flex-col gap-y-24">
 
-<FAQ  desktopColumn />
-
+<div className="!text-white">
+<FAQ  desktopColumn paraWhite />
+</div>
 
 <BrandsWeWorkedWith/>
 

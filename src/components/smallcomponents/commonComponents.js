@@ -66,6 +66,9 @@ const openSingleFaq = (event,index)=>{
         elem.querySelector(".singleFaqParagraph").classList.remove("checkShown")
         elem.querySelector(".singleFaqParagraph").classList.add("checkHidden")
 
+        elem.querySelector(".faqArrow").classList.remove("rotate-180")
+        elem.querySelector(".faqArrow").classList.add("rotate-0")
+
     })
 
 
@@ -73,10 +76,16 @@ const openSingleFaq = (event,index)=>{
     document.querySelectorAll(".eachFaq")[index].lastChild.classList.remove("checkHidden")
     document.querySelectorAll(".eachFaq")[index].lastChild.classList.add("checkShown")
 
+    document.querySelectorAll(".eachFaq")[index].querySelector(".faqArrow").classList.remove("rotate-0")
+    document.querySelectorAll(".eachFaq")[index].querySelector(".faqArrow").classList.add("rotate-180")
+    
+
+
+
 }
 
 
-export const FAQ = ({primary,desktopColumn}) =>{
+export const FAQ = ({primary,desktopColumn,paraWhite}) =>{
         return <div className={` xl:flex xl:flex-row    ${desktopColumn&&'sm:flex-col  '}   sm:gap-x-32 `}>
 
         <div className={`w-full ${primary?'text-secondaryColor':'text-white'} `} >
@@ -103,12 +112,12 @@ export const FAQ = ({primary,desktopColumn}) =>{
             return <div className="eachFaq cursor-pointer  py-10 px-7" onClick={(event)=>openSingleFaq(event,index)} >
                 <div className="flex gap-x-4">
                     <p className={`${primary?'text-secondaryText':'text-white'} leading-8 font-bold text-2xl`}>Hire to outsource your digital</p>
-                    <div style={{minWidth:'32px',height:'32px'}} className="sm:ml-auto flex items-center  justify-center text-white text-xl  bg-primaryBackground rounded-full">
+                    <div style={{transition:'all 0.5s',minWidth:'32px',height:'32px'}} className="sm:ml-auto flex items-center  justify-center text-white text-xl  bg-primaryBackground rounded-full faqArrow " >
                         <FaAngleDown/>
                     </div>
                 </div>
                 
-                <p className={`singleFaqParagraph checkHidden  text-secondaryText leading-8  `}>Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.</p>
+                <p className={`singleFaqParagraph checkHidden ${paraWhite?'text-white':'text-secondaryText'}  leading-8  `}>Digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you hit your marketing goals and grow your business.</p>
 
 
             </div>

@@ -154,7 +154,6 @@ export default function Contact(){
 </div>
 {/*  */}
 
-<Footer/>
 
 {/*  */}
 
@@ -165,6 +164,7 @@ export default function Contact(){
 
 
 
+<Footer/>
 
 
 
