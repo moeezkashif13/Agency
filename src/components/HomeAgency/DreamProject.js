@@ -1,20 +1,29 @@
 import { ButtonText } from "../smallcomponents/CommonButtons";
 
+import Image from 'next/image'
+
+
 export default function DreamProject(){
 
 return(
     <div className="bg-primaryBackground rounded-md   px-6 sm:gap-x-24  sm:px-12 pt-9 pb-12 sm:pb-20  lg:flex lg:flex-row-reverse lg:pb-12">
 
+{/* bg-[url('/DreamProject.png')]
+
+sm:bg-[url('/DreamProject-Desktop.png')] */}
+
+<div className="    relative        w-full  h-[264px] sm:h-[432px] bg-center  bg-contain bg-no-repeat "
 
 
-<div className="w-full  h-[264px] sm:h-[432px] bg-center  bg-contain bg-no-repeat 
+>
+
+<Image src={'/DreamProject-Desktop.png'} fill quality={100}  />
 
 
-bg-[url('/DreamProject.png')]
+</div>
 
-sm:bg-[url('/DreamProject-Desktop.png')]
 
-"></div>
+
 
 
 <div className="w-full  ">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ButtonText } from "../smallcomponents/CommonButtons";
 import { BrandsWeWorkedWith } from "../smallcomponents/commonComponents";
 import Navbar from "../smallcomponents/Navbar";
@@ -16,17 +17,16 @@ export default function HomeAgencyHeroSect(){
 
 <div className="sm:flex   sm:pt-24 pt-12 sm:flex-col-reverse xl:flex-row-reverse    sm:gap-x-16 sm:justify-between">
 
+{/* bg-[url('/Bitmap.png')]
 
-<div className="w-full h-[335px] lg:mx-auto sm:h-[600px]  sm:w-[570px]  bg-contain bg-no-repeat 
+sm:bg-[url('/Bitmap-Desktop.png')] */}
 
-
-bg-[url('/Bitmap.png')]
-
-sm:bg-[url('/Bitmap-Desktop.png')]
-
+<div className="w-full h-[335px] lg:mx-auto sm:h-[600px]  sm:w-[570px]  bg-contain bg-no-repeat relative
 
 
 ">
+
+    <Image src={'/Bitmap-Desktop.png'} fill style={{objectFit:'contain'}} quality={100} />
 
 {/* <img src="/Bitmap.png" /> */}
 

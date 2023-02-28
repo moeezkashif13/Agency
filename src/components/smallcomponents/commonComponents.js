@@ -78,10 +78,6 @@ const openSingleFaq = (event,index)=>{
 
     document.querySelectorAll(".eachFaq")[index].querySelector(".faqArrow").classList.remove("rotate-0")
     document.querySelectorAll(".eachFaq")[index].querySelector(".faqArrow").classList.add("rotate-180")
-    
-
-
-
 }
 
 
