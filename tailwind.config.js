@@ -14,6 +14,10 @@ module.exports = {
   theme: {
     extend: {
 
+      fontFamily:{
+        sans : ['var(--font-epilogue)']
+      },
+
       screens:{
 
         'xs': {'max': '383px'},

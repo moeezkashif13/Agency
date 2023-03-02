@@ -30,7 +30,7 @@
 
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Epilogue';
   src: url('../../assets/Epilogue/Epilogue-Bold.ttf');
   font-style: normal;
@@ -63,12 +63,12 @@
   src: url('../../assets/Epilogue/Epilogue-Regular.ttf');
   font-style: normal;
   font-weight: 400;
-}
+} */
 
 
-body{
+/* body{
   font-family:  'Epilogue' ;
-}
+} */
 
 
 
